@@ -55,11 +55,15 @@ export default new Vuex.Store({
     },
     getWinningPlayer (context) {
       return new Promise(resolve => {
-        let lowestScorePlayer = context.state.players[0]
-        context.state.players.forEach(player => {
-          if (player.totalScore <= lowestScorePlayer.totalScore) lowestScorePlayer = player
-        })
-        resolve(lowestScorePlayer)
+        if (context.state.gameEnded) {
+          let lowestScorePlayer = context.state.players[0]
+          context.state.players.forEach(player => {
+            if (player.totalScore <= lowestScorePlayer.totalScore) lowestScorePlayer = player
+          })
+          resolve(lowestScorePlayer)
+        } else {
+          resolve(null)
+        }
       })
     },
     createPlayer (context, data) {

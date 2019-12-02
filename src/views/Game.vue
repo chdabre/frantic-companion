@@ -36,13 +36,11 @@ export default {
     ...mapState(['players', 'round', 'gameEnded'])
   },
   watch: {
-    gameEnded (value) {
-      if (value) {
-        this.$store.dispatch('getWinningPlayer')
-          .then(winningPlayer => {
-            this.winningPlayer = winningPlayer
-          })
-      }
+    gameEnded () {
+      this.$store.dispatch('getWinningPlayer')
+        .then(winningPlayer => {
+          this.winningPlayer = winningPlayer
+        })
     }
   }
 }

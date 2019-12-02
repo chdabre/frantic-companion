@@ -1,40 +1,44 @@
 <template>
-  <v-simple-table class="scoreboard">
+  <v-simple-table
+    class="scoreboard"
+    fixed-header
+    height="60vh"
+  >
     <template v-slot:default>
       <thead>
-      <tr>
-        <th
-          v-for="player in players" :key="`player-${player.id}`"
-          class="text-center"
-        >
-          <v-tooltip bottom>
-            <template v-slot:activator="{ on }">
-              <v-icon v-on="on">{{ player.icon }}</v-icon>
-            </template>
-            <span>{{ player.name }}</span>
-          </v-tooltip>
-        </th>
-      </tr>
+        <tr>
+          <th
+            v-for="player in players" :key="`player-${player.id}`"
+            class="text-center"
+          >
+            <v-tooltip bottom>
+              <template v-slot:activator="{ on }">
+                <v-icon v-on="on">{{ player.icon }}</v-icon>
+              </template>
+              <span>{{ player.name }}</span>
+            </v-tooltip>
+          </th>
+        </tr>
       </thead>
       <tbody>
-      <tr v-for="roundNumber in round" :key="`round-${roundNumber}}`">
-        <td
-          v-for="player in players"
-          :key="`score-${roundNumber}-${player.id}`"
-          class="text-center"
-          v-text="player.getScore(roundNumber - 1)"
-        ></td>
-      </tr>
+        <tr v-for="roundNumber in round" :key="`round-${roundNumber}}`">
+          <td
+            v-for="player in players"
+            :key="`score-${roundNumber}-${player.id}`"
+            class="text-center"
+            v-text="player.getScore(roundNumber - 1)"
+          ></td>
+        </tr>
       </tbody>
       <tfoot class="table-footer">
-      <tr>
-        <td
-          v-for="player in players"
-          :key="`total-score-${player.id}`"
-          class="text-center font-weight-bold"
-          v-text="player.totalScore"
-        ></td>
-      </tr>
+        <tr>
+          <td
+            v-for="player in players"
+            :key="`total-score-${player.id}`"
+            class="text-center font-weight-bold"
+            v-text="player.totalScore"
+          ></td>
+        </tr>
       </tfoot>
     </template>
   </v-simple-table>
@@ -52,6 +56,6 @@ export default {
 
 <style lang="scss">
 .scoreboard {
-  // height: calc(100vh - 180px);
+  //height: 50vh;
 }
 </style>
