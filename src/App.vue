@@ -1,32 +1,50 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+  <v-app>
+    <v-content>
+      <v-app-bar
+        v-if="!hideAppBar"
+        color="background"
+      >
+        <v-btn
+          icon
+          v-if="!appBarSettings.hideBackButton"
+          @click="$router.back()"
+        >
+          <v-icon>mdi-arrow-left</v-icon>
+        </v-btn>
+        <v-toolbar-title class="subtitle-1">{{ appBarSettings.title }}</v-toolbar-title>
+      </v-app-bar>
+      <router-view></router-view>
+    </v-content>
+  </v-app>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
+<script>
+export default {
+  name: 'App',
+  computed: {
+    hideAppBar () {
+      return this.$route.meta.hideAppBar
+    },
+    appBarSettings () {
+      return Object.assign({
+        title: 'Frantic',
+        hideBackButton: false
+      }, this.$route.meta.appBarSettings || {})
     }
   }
+}
+</script>
+
+<style lang="scss">
+html {
+  -webkit-text-size-adjust: none
+}
+body {
+  position: fixed;
+  width: 100%;
+}
+.theme--dark.v-application {
+  background-color: #161616!important; // Override dark bg color
 }
 </style>

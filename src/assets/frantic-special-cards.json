@@ -1,0 +1,102 @@
+[
+  {
+    "type": "classic",
+    "name": "Tornado",
+    "description": "Alle Karten, die die Spieler in den Händen halten, werden zusammengelegt, neu gemischt und vom Urheber möglichst gleichmässig der Reihe nach neu verteilt."
+  },
+  {
+    "type": "classic",
+    "name": "Earthquake",
+    "description": "Jeder Spieler gibt die Karten, die er auf der Hand hält, dem Spieler rechts von ihm weiter."
+  },
+  {
+    "type": "classic",
+    "name": "Finish Line",
+    "description": "Das Spiel ist sofort beendet und die Spieler zählen die Punkte, die sie auf der Hand halten."
+  },
+  {
+    "type": "classic",
+    "name": "Vandalism",
+    "description": "Alle Spieler müssen von der zuletzt gespielten Farbenkarte alle gleichfarbigen Handkarten abwerfen (sowohl Zahl- als auch Spezialkarten). Sofern noch keine Farbe gespielt wurde, ist das Ereignis wirkungslos."
+  },
+  {
+    "type": "classic",
+    "name": "Doomsday",
+    "description": "Das Spiel ist sofort beendet. Alle Spieler erhalten 50 Punkte."
+  },
+  {
+    "type": "classic",
+    "name": "Mating Season",
+    "description": "Alle Spieler müssen sämtliche Zahlenkarten-Kombinationen, die sie auf der Hand halten, abwerfen. Als Kombinationen gelten Paare, Drillinge, Vierlinge usw. Die Farbe der Karten spielt dabei keine Rolle."
+  },
+  {
+    "type": "classic",
+    "name": "Robin Hood",
+    "description": "Der Spieler mit den wenigsten Karten muss seine Handkarten mit dem Spieler mit den meisten Karten tauschen."
+  },
+  {
+    "type": "classic",
+    "name": "Surprise Party",
+    "description": "Jeder Spieler muss einer Person seiner Wahl eine Karte aus seiner Hand schenken."
+  },
+  {
+    "type": "classic",
+    "name": "Gambling Man",
+    "description": "Alle Spieler müssen von der zuletzt gespielten Farbe eine möglichst tiefe Zahlenkarte verdeckt auf den Tisch legen. Alle Karten werden gleichzeitig aufgedeckt. Der Spieler, welcher die höchste Zahl gespielt hat, muss alle Karten in seine Hand aufnehmen. Spieler, welche keine Zahlenkarte dieser Farbe auf der Hand halten, müssen zur Strafe zwei Karten ziehen. Ausnahme: Sofern noch keine Farbe gespielt wurde, ist das Ereignis wirkungslos."
+  },
+  {
+    "type": "classic",
+    "name": "Time Bomb",
+    "description": "Nur noch drei Züge pro Spieler. Die Runde wird sofort beendet, sobald ein Spieler zum vierten Mal an die Reihe kommen würde. Sollte ein Spieler vor Ablauf dieser Zeit alle Karten loswerden, so bekommt er zehn Punkte abgezogen. Alle anderen kassieren eine Strafe von zehn Punkten, zusätzlich zu den Karten auf der Hand. Wenn aber keiner während dieser Frist die Runde beenden kann, zählen alle Punkte doppelt."
+  },
+  {
+    "type": "classic",
+    "name": "Communism",
+    "description": "Alle Spieler müssen ihre Handkarten auf die gleiche Anzahl wie der Spieler mit meisten Handkarten ergänzen."
+  },
+  {
+    "type": "classic",
+    "name": "Charity",
+    "description": "Jeder Spieler zieht vom Mitspieler mit den meisten Karten auf der Hand eine Karte. Wichtig: Bei Kartengleichstand wird von allen Spielern mit den meisten Karten je eine gezogen. Sofern mehrere Spieler die meisten Karten besitzen, müssen diese nicht voneinander eine Karte ziehen."
+  },
+  {
+    "type": "classic",
+    "name": "Friday the 13th",
+    "description": "Es ist Freitag der Dreizehnte. Ein Massenmörder mit Hockey-Maske geht um… Aber nur im Film, denn es ist ein ganz normaler Freitag an dem nichts Aussergewöhnliches geschieht. Die Runde geht normal weiter."
+  },
+  {
+    "type": "classic",
+    "name": "Expansion",
+    "description": "Der Reihe nach ziehen die Spieler Karten vom Kartenstapel. Der erste Spieler zieht eine Karte, der zweite Spieler zieht zwei Karten, der Dritte drei und so weiter."
+  },
+  {
+    "type": "classic",
+    "name": "Recession",
+    "description": "Der Reihe nach verwerfen die Spieler Karten aus ihrer Hand. Der erste Spieler verwirft eine Karte, der zweite Spieler verwirft zwei Karten, der Dritte drei und so weiter."
+  },
+  {
+    "type": "classic",
+    "name": "The All Seeing Eye",
+    "description": "Alle Spieler müssen ihre Karten offen auslegen. Die Karten bleiben so lange aufgedeckt, bis alle Spieler ihr O.K. geben, sie wieder aufzunehmen und weiter zu spielen."
+  },
+  {
+    "type": "classic",
+    "name": "Mexican Standoff",
+    "description": "Alle Spieler verwerfen ihre Handkarten und ziehen der Reihe nach drei Karten vom Stapel."
+  },
+  {
+    "type": "classic",
+    "name": "Market",
+    "description": "Es werden so viele Karten, wie Spieler anwesend sind, vom Kartenstapel aufgedeckt. Dann müssen die Spieler der Reihe nach eine dieser Karten auf die Hand nehmen."
+  },
+  {
+    "type": "classic",
+    "name": "Third Time Lucky",
+    "description": "Alle Spieler ziehen drei Karten."
+  },
+  {
+    "type": "classic",
+    "name": "Merry Christmas",
+    "description": "Alle Spieler müssen sämtliche Handkarten unter den Mitspielern verschenken. Die Karten können beliebig aufgeteilt werden."
+  }
+]
