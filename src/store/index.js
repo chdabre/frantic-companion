@@ -47,7 +47,6 @@ export default new Vuex.Store({
       context.commit('incrementRound')
       context.state.players.forEach(player => {
         const playerScore = player.updateScore()
-        console.log(playerScore)
         if (playerScore >= context.state.gameSettings.loseScore) {
           // Game ended
           context.commit('setGameEnded', true)
