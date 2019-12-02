@@ -18,12 +18,12 @@
           :to="{ name: 'setup-game' }"
         >Neues Spiel
         </v-btn>
-        <v-btn
-          block light
-          color="white"
-          class="mb-5"
-        >Punkterechner
-        </v-btn>
+<!--        <v-btn-->
+<!--          block light-->
+<!--          color="white"-->
+<!--          class="mb-5"-->
+<!--        >Punkterechner-->
+<!--        </v-btn>-->
       </v-row>
     </v-col>
   </v-container>
